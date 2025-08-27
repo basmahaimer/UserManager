@@ -172,4 +172,3 @@ Ce projet est destiné à un usage interne et éducatif.
 
 ---
 
-**Note** : Assurez-vous de toujours utiliser des secrets JWT robustes et de maintenir votre base de données MongoDB sécurisée en production.
