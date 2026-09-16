@@ -14,7 +14,7 @@ app.use('/api/auth', require('./routes/auth'));
 app.use('/api/users', require('./routes/users'));
 
 // Connect MongoDB
-mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/usermanager')
 .then(() => console.log("MongoDB connecté"))
 .catch(err => console.log("Erreur MongoDB:", err));
 
